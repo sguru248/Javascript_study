@@ -19,7 +19,7 @@ request.open('GET', 'https://restcountries.com/v3.1/name/portugal');
 request.send(); // This will now send of the request to URL. //This request fetches the data in background // Once It's done //Its Emit the "load" Event
 //We can,t store in variable, Because This AJAX call that we just send off here,is being done in the background, While the rest of the code keep running.(This is Asynchronus Non_blocking behaviour)
 
-//Instead What we need to do is register a call back on a request object for the load event
+//Instead What we need to do is register a call back on a 'request' object for the load event
 //We are waiting for the 'load' Event ,//And as soon as data Arraived the call back function here will be called
 
 request.addEventListener('load', function () {

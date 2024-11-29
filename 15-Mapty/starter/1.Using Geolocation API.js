@@ -12,7 +12,7 @@ const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
 //Using Geolocation API
-//navigator.geolocation(success call back, Error Call back)
+//navigator.geolocation.getCurrenntPosition(success call back, Error Call back)
 if (navigator.geolocation)
   navigator.geolocation.getCurrentPosition(
     function (Position) {
